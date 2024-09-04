@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselViewController" customModule="Vought_Showcase" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Wdt-ua-dbL" id="3fd-pe-WiW"/>
+                <outlet property="progressStackView" destination="BDU-i3-4t8" id="KCh-SU-g07"/>
+                <outlet property="view" destination="5XN-sE-Tx1" id="DIX-hk-WsU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5XN-sE-Tx1">
+            <rect key="frame" x="0.0" y="0.0" width="762" height="1131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDU-i3-4t8">
+                    <rect key="frame" x="5" y="69" width="752" height="5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="u8a-Qv-Zpz"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-ua-dbL" userLabel="containerView">
+                    <rect key="frame" x="0.0" y="0.0" width="762" height="1131"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="2Hc-cG-HM8"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BDU-i3-4t8" firstAttribute="top" secondItem="2Hc-cG-HM8" secondAttribute="top" constant="10" id="8Fa-6q-l3n"/>
+                <constraint firstAttribute="trailing" secondItem="BDU-i3-4t8" secondAttribute="trailing" constant="5" id="I9J-8b-pv2"/>
+                <constraint firstItem="Wdt-ua-dbL" firstAttribute="trailing" secondItem="2Hc-cG-HM8" secondAttribute="trailing" id="Oog-xe-X9R"/>
+                <constraint firstItem="Wdt-ua-dbL" firstAttribute="leading" secondItem="2Hc-cG-HM8" secondAttribute="leading" id="YaR-nC-vHc"/>
+                <constraint firstItem="Wdt-ua-dbL" firstAttribute="top" secondItem="5XN-sE-Tx1" secondAttribute="topMargin" id="ZSD-0s-Nd5"/>
+                <constraint firstItem="BDU-i3-4t8" firstAttribute="leading" secondItem="5XN-sE-Tx1" secondAttribute="leading" constant="5" id="hjL-ie-djM"/>
+                <constraint firstItem="Wdt-ua-dbL" firstAttribute="leading" secondItem="2Hc-cG-HM8" secondAttribute="leading" id="kuu-HG-NZV"/>
+                <constraint firstItem="Wdt-ua-dbL" firstAttribute="trailing" secondItem="2Hc-cG-HM8" secondAttribute="trailing" id="lR9-7d-BKu"/>
+                <constraint firstItem="2Hc-cG-HM8" firstAttribute="bottom" secondItem="Wdt-ua-dbL" secondAttribute="bottom" constant="-34" id="y1w-FZ-9gi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-267.17557251908397" y="-6.6901408450704229"/>
+        </view>
+    </objects>
+</document>
